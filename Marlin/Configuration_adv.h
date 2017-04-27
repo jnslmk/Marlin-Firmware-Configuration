@@ -527,9 +527,9 @@
 //    interrupts (without LCD update). By enforcing a minimum time-per-move, the buffer is prevented from
 //    draining.
 //
-//#define ENSURE_SMOOTH_MOVES
+#define ENSURE_SMOOTH_MOVES
 #if ENABLED(ENSURE_SMOOTH_MOVES)
-  //#define ALWAYS_ALLOW_MENU      // If enabled, the menu will always be responsive.
+  #define ALWAYS_ALLOW_MENU      // If enabled, the menu will always be responsive.
                                    // WARNING: Menu navigation during short moves may cause stuttering!
   #define LCD_UPDATE_THRESHOLD 135 // (ms) Minimum duration for the current segment to allow an LCD update.
                                    // Default value is good for graphical LCDs (e.g., REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER).
