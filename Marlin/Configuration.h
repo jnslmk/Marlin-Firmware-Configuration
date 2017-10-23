@@ -190,12 +190,12 @@
  *
  * :{ 0:'No power switch', 1:'ATX', 2:'X-Box 360' }
  */
-#define POWER_SUPPLY 0
+#define POWER_SUPPLY 1
 
 #if POWER_SUPPLY > 0
   // Enable this option to leave the PSU off at startup.
   // Power to steppers and heaters will need to be turned on with M80.
-  //#define PS_DEFAULT_OFF
+  #define PS_DEFAULT_OFF
 #endif
 
 // @section temperature
@@ -721,8 +721,8 @@
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS 190
-#define Y_MAX_POS 170
-#define Z_MAX_POS 300
+#define Y_MAX_POS 160
+#define Z_MAX_POS 250
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
